@@ -3,7 +3,7 @@
 > **Trust Label:** `educational-reference`  
 > **Verification:** [VERIFICATION-LOG.md](VERIFICATION-LOG.md)  
 > **Status:** Educational pure-function reference + Deep documentation pass  
-> **Parent Catalog:** [wax-ecosystem-blueprint-catalog](https://github.com/pixel-journey/wax-ecosystem-blueprint-catalog)
+> **Parent Catalog:** `wax-ecosystem-blueprint-catalog` (private index; not this public course)
 
 **One-sentence goal:** Compute which lessons are **done**, **ready**, or **locked** from an argument list of lessons and completed ids — with cycle detection, no storage, and no XP.
 
