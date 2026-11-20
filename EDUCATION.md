@@ -49,6 +49,15 @@ npm test
 
 Readiness checks only the **immediate** prerequisite. Transitive ancestors are not re-walked at status time; cycles are rejected up front instead.
 
+### Attack → test
+
+| Attack | Lab behavior |
+| --- | --- |
+| Cycle a↔b | refused |
+| Self-require | refused |
+| Done id not in lesson list | refused |
+| Assume blend-done unlocks schema | schema stays locked |
+
 ---
 
 ## Masterclass
@@ -62,9 +71,9 @@ Readiness checks only the **immediate** prerequisite. Transitive ancestors are n
 
 ### Exercises
 
-1. After `intro`, is `blend` ready? (No.)  
-2. Why refuse cycles instead of ranking them?  
-3. Does done=`["blend"]` unlock schema? (No.)
+1. After `intro`, is `blend` ready? (**No**.)  
+2. Why refuse cycles instead of ranking them? (Validation before status.)  
+3. Does done=`["blend"]` unlock schema? (**No**.)
 
 ---
 
